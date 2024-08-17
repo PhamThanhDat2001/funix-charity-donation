@@ -1,0 +1,44 @@
+
+            .container {
+                display: flex;
+                height: 100%;
+
+            }
+           .sidebar {
+               width: 200px;
+               background-color: #333;
+               color: white;
+               padding: 20px;
+               box-sizing: border-box;
+               position: fixed; /* Giữ sidebar cố định khi cuộn trang */
+               left: 0; /* Đặt sidebar ở bên trái */
+               top: 0; /* Đặt sidebar từ đầu trang */
+               height: 100%; /* Đảm bảo sidebar chiếm hết chiều cao của trang */
+               overflow-y: auto; /* Cho phép cuộn nếu nội dung quá dài */
+           }
+            .sidebar button {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 10px;
+                background-color: #007bff;
+                border: none;
+                color: white;
+                cursor: pointer;
+                border-radius: 3px;
+                text-align: left;
+            }
+            .sidebar button:hover {
+                background-color: #0056b3;
+            }
+            .main-content {
+                flex-grow: 1;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            .content {
+                display: none;
+            }
+            .content.active {
+                display: block;
+            }

@@ -1,0 +1,151 @@
+       body {
+
+            padding-left: 220px; /* Thêm padding bên trái để tạo khoảng cách với sidebar */
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            position: fixed; /* Giữ sidebar cố định khi cuộn trang */
+            left: 0; /* Đặt sidebar ở bên trái */
+            top: 0; /* Đặt sidebar từ đầu trang */
+            height: 100%; /* Đảm bảo sidebar chiếm hết chiều cao của trang */
+            overflow-y: auto; /* Cho phép cuộn nếu nội dung quá dài */
+        }
+        .main-content {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        button {
+            margin: 3px;
+        }
+        .table {
+            margin-top: 20px; /* Khoảng cách từ bảng đến các phần khác */
+            border-collapse: collapse; /* Để loại bỏ khoảng cách giữa các đường viền ô bảng */
+            width: 100%; /* Chiều rộng bảng 100% */
+        }
+        .table th, .table td {
+            border: 1px solid #dee2e6; /* Viền ô bảng 1px, màu xám nhạt */
+            padding: 8px; /* Khoảng cách giữa nội dung và viền của ô bảng */
+            text-align: center; /* Căn giữa nội dung trong ô bảng */
+        }
+        .table th {
+            background-color: #808080; /* Màu nền đầu bảng */
+            color: white; /* Màu chữ trắng cho tiêu đề bảng */
+        }
+        .table td {
+            vertical-align: middle; /* Căn giữa nội dung dọc trong ô bảng */
+        }
+        .pagination {
+            justify-content: flex-end; /* Căn phân trang sang phải */
+            margin-top: 10px;
+        }
+
+
+
+
+/* Modal header */
+.modal-header {
+  background-color: #007bff; /* Màu nền header */
+  color: #fff; /* Màu chữ */
+  border-bottom: 1px solid #dee2e6; /* Đường viền dưới */
+  padding: 15px; /* Khoảng cách padding */
+}
+
+/* Modal title */
+.modal-title {
+  color: #fff; /* Màu chữ tiêu đề */
+}
+
+/* Modal body */
+.modal-body {
+  padding: 20px; /* Khoảng cách padding */
+}
+
+/* Modal footer */
+.modal-footer {
+  background-color: #f7f7f7; /* Màu nền footer */
+  border-top: 1px solid #dee2e6; /* Đường viền trên */
+  padding: 10px; /* Khoảng cách padding */
+}
+
+/* Form labels */
+.modal-body label {
+  font-weight: bold; /* Độ đậm của chữ */
+}
+
+/* Form inputs */
+.modal-body input[type="text"],
+.modal-body input[type="email"],
+.modal-body input[type="password"] {
+  width: 100%; /* Chiều rộng input */
+  padding: 8px; /* Khoảng cách padding */
+  margin-bottom: 10px; /* Khoảng cách giữa các input */
+  border: 1px solid #ccc; /* Đường viền input */
+  border-radius: 4px; /* Độ cong viền */
+}
+
+/* Form select */
+.modal-body select {
+  width: 100%; /* Chiều rộng select */
+  padding: 8px; /* Khoảng cách padding */
+  margin-bottom: 10px; /* Khoảng cách giữa các input */
+  border: 1px solid #ccc; /* Đường viền select */
+  border-radius: 4px; /* Độ cong viền */
+}
+
+/* Save button */
+.modal-body .save {
+  background-color: #28a745; /* Màu nền nút */
+  color: #fff; /* Màu chữ nút */
+  border: none; /* Không có đường viền */
+  padding: 10px 20px; /* Khoảng cách padding */
+  cursor: pointer; /* Con trỏ chuột */
+}
+
+/* Close button */
+.modal-footer .btn-secondary {
+  background-color: #6c757d; /* Màu nền nút close */
+  color: #fff; /* Màu chữ nút close */
+  border: none; /* Không có đường viền */
+  padding: 10px 20px; /* Khoảng cách padding */
+  cursor: pointer; /* Con trỏ chuột */
+}
+
+/* Primary button */
+.modal-footer .btn-primary {
+  background-color: #007bff; /* Màu nền nút primary */
+  color: #fff; /* Màu chữ nút primary */
+  border: none; /* Không có đường viền */
+  padding: 10px 20px; /* Khoảng cách padding */
+  cursor: pointer; /* Con trỏ chuột */
+}
+/* Định dạng cho các cột của form */
+.modal-body table {
+    width: 100%; /* Đảm bảo bảng chiếm toàn bộ chiều rộng của modal */
+}
+
+.modal-body table td {
+    padding: 8px; /* Khoảng cách padding cho mỗi ô */
+}
+
+/* Định dạng cho cột trái */
+.modal-body table td:first-child {
+    width: 30%; /* Chiều rộng của cột trái */
+    text-align: right; /* Căn chỉnh văn bản sang phải */
+}
+
+/* Định dạng cho cột phải */
+.modal-body table td:nth-child(2) {
+    width: 70%; /* Chiều rộng của cột phải */
+    text-align: left; /* Căn chỉnh văn bản sang trái */
+}
+.readonly-input[disabled] {
+    background-color: #e9ecef; /* Same as read-only input fields */
+    cursor: not-allowed; /* Indicates the field is not editable */
+}
+.pagination  {
+        margin-right: 5px;
+    }

@@ -1,0 +1,38 @@
+  .table {
+            margin-top: 20px; /* Khoảng cách từ bảng đến các phần khác */
+            border-collapse: collapse; /* Để loại bỏ khoảng cách giữa các đường viền ô bảng */
+            width: 100%; /* Chiều rộng bảng 100% */
+        }
+        .table th, .table td {
+            border: 1px solid #dee2e6; /* Viền ô bảng 1px, màu xám nhạt */
+            padding: 8px; /* Khoảng cách giữa nội dung và viền của ô bảng */
+            text-align: center; /* Căn giữa nội dung trong ô bảng */
+        }
+        .table th {
+            background-color: #808080; /* Màu nền đầu bảng */
+            color: white; /* Màu chữ trắng cho tiêu đề bảng */
+        }
+        .table td {
+            vertical-align: middle; /* Căn giữa nội dung dọc trong ô bảng */
+        }
+
+.modal-body table {
+    width: 100%; /* Đảm bảo bảng chiếm toàn bộ chiều rộng của modal */
+}
+
+.modal-body table td {
+    padding: 8px; /* Khoảng cách padding cho mỗi ô */
+}
+
+/* Định dạng cho cột trái */
+.modal-body table td:first-child {
+    width: 30%; /* Chiều rộng của cột trái */
+    text-align: right; /* Căn chỉnh văn bản sang phải */
+}
+
+/* Định dạng cho cột phải */
+.modal-body table td:nth-child(2) {
+    width: 70%; /* Chiều rộng của cột phải */
+    text-align: left; /* Căn chỉnh văn bản sang trái */
+}
+
